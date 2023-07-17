@@ -15,7 +15,7 @@ const createContact = async (req, res) => {
     const response = await mongodb
       .getDb()
       .db("Guero")
-      .collection("userInfor")
+      .collection("userInf")
       .insertOne(userPersonalInf);
     if (response.acknowledged) {
       res.status(201).json(response);
