@@ -1,0 +1,25 @@
+body{
+    background-color: lightblue;
+}
+
+.form_field{
+    font-size: 18px;
+    display: grid;
+    background-color:rgb(196, 204, 213);
+    border-radius: 5px;
+    padding: 40px; 
+    width: 320px;
+    margin-top: 10px;
+    box-shadow: 5px 5px rgb(155, 162, 171);
+    margin-left: 60px;
+}
+
+.user-info{
+    margin-left: 55px;
+}
+
+.userSubmit{
+    width: 320px;
+    height: 30px;
+    margin-left: 0px;
+}

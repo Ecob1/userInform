@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enterInfo.css">
+    <title>Patient information</title>
+</head>
+<body>
+    
+    <div class="form_field">
+        <form action="user-Information" method="GET"  class="user-info">
+            <h3>Enter information below:</h3>
+            <div>
+                <!--Text filed for Name.-->
+                <label for="first_name">First Name:</label><br>
+                <input type="text" name="first_name" id="first_name" placeholder="John" oninput="validateName()" required/>
+                <div id="first_name_error" class="error-ms" style="visibility:hidden;"> * First Name required.</div>
+            
+                <!--Text field for Last name.-->                    
+                <label for="last_name">Last Name:</label><br>
+                <input type="text" name="last_name" id="last_name" placeholder="Doe" oninput="validateLastName()" required/>
+                <div id="last_name_error" class="error-ms" style="visibility:hidden;"> * Last Name required.</div>
+            
+                <!--Text field for Student ID..-->                    
+                <label for="student_id">Student ID:</label><br>
+                <input type="text" name="student_id" id="student_id" placeholder="123 456" oninput="validateId()" required/>
+                <div id="id_error" class="error-ms" style="visibility:hidden;"> * Please enter the ID in this format xxx xxx.</div>
+            </div>
+         
+            <div class="hidden"> 
+                <h3>Enter address information:</h3>   
+                <!--Text filed for Name.-->
+                <label>Address:</label><br>
+                <input type="text" name="address" id="address" placeholder="Garcia Ln 34" required/>                        
+                <div id="address_error" class="error-ms" style="visibility:hidden;"> * Enter address.</div>
+            
+                <!--Text field for Last name.-->                    
+                <label>City:</label><br>
+                <input type="text" name="city" id="city" placeholder="Elko" required/>                        
+                <div id="city_error" class="error-ms" style="visibility:hidden;">* Enter city.</div>
+
+                <!--Text field for Last name.-->                    
+                <label>State:</label><br>
+                <input type="text" name="state" id="state" placeholder="Nevada" required/>                        
+                <div id="state_error" class="error-ms" style="visibility:hidden;">* Enter state.</div>
+            
+                <!--Text field for Student ID..-->                    
+                <label>Zip code:</label><br>
+                <input type="number" name="zipCode" id="zipCode" placeholder="89801" required/>                        
+                <div id="zipCode_error" class="error-ms" style="visibility:hidden;">* Enter zip code.</div>
+                
+            </div>
+        </form>
+        <div><button class="userSubmit" type="submit" >Submit</button></div>
+    </div>
+</body>
+</html>
